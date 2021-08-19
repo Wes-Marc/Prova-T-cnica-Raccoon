@@ -164,9 +164,11 @@ html, body {
 
 /* Chamada animação flecha */
 .main > .landingPage > #landingPage-Flecha {
+    opacity: 0.5;
     animation: apaga 0.5s;
     animation-iteration-count: 3;
     animation-fill-mode: forwards;
+    animation-delay: 2s;
 }
 
 /* Animação Flecha */
@@ -181,3 +183,57 @@ html, body {
 }
 
 /* #endregion Landing Page, Elementos */
+
+/* Textos antes da Tabela de Cores */
+/* #region Textos */
+.main > #containerTexto1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+    margin: 30px 0px;
+    padding: 40px;
+}
+
+.main > #containerTexto1 > p > #palavraLaranja {
+    color: tomato;
+}
+
+/* Segundo texto antes da Tabela de Cores */
+
+.main > #containerTexto2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main > #containerTexto2 > h2 {
+    text-align: center;
+    font-size: 40px;
+    color: steelblue;
+}
+
+.main > #containerTexto2 > p {
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+    padding: 20px;
+    margin: 0px;
+}
+/* #endregion Textos */
+
+/* Tabela com cards coloridos */
+
+.main > .cardsColoridos {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 200px);
+}
+
+.main > .cardsColoridos > table {
+    width:100%; 
+    border-spacing: 40px 20px;
+    color: white; 
+}
