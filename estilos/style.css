@@ -224,16 +224,80 @@ html, body {
 /* #endregion Textos */
 
 /* Tabela com cards coloridos */
+/* #region Cards Coloridos */
 
+/* Container Principal - Grid */
 .main > .cardsColoridos {
-    margin: 50px;
+    margin: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 200px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 20px 40px;
 }
 
-.main > .cardsColoridos > table {
-    width:100%; 
-    border-spacing: 40px 20px;
-    color: white; 
+/* Deixa todos os cards como flex linha */
+.main > .cardsColoridos > :nth-child(n) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    color: white;
 }
+
+/* Deixa todos os textos dentro dos cards como flex coluna */
+.main > .cardsColoridos > :nth-child(n) > div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 20px;
+}
+
+.main > .cardsColoridos > :nth-child(n) > div > h4, p {
+    margin: 5px;
+}
+
+/* #region Cores Cards */
+/* Card 1 */
+.main > .cardsColoridos > :nth-child(1) {
+    background-color: #0072c6;
+}
+
+.main > .cardsColoridos > :nth-child(2) {
+    background-color: #2c5898;
+}
+
+.main > .cardsColoridos > :nth-child(3) {
+    background-color: #207245;
+}
+
+.main > .cardsColoridos > :nth-child(4) {
+    background-color: #cb4a32;
+}
+
+.main > .cardsColoridos > :nth-child(5) {
+    background-color: #733781;
+}
+
+.main > .cardsColoridos > :nth-child(6) {
+    background-color: #00aff0;
+}
+
+.main > .cardsColoridos > :nth-child(7) {
+    background-color: #094ab2;
+}
+
+.main > .cardsColoridos > :nth-child(8) {
+    background-color: #0073c6;
+}
+
+.main > .cardsColoridos > :nth-child(9) {
+    background-color: #0093be;
+}
+
+.main > .cardsColoridos > :nth-child(10) {
+    background-color: #5558af;
+}
+
+/* #endregion Cores Cards */
+
+/* #endregion Cards Coloridos */
