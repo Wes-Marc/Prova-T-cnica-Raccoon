@@ -203,15 +203,17 @@ html, body {
 
 /* Segundo texto antes da Tabela de Cores */
 
+/* Titulo Azul */
+.titulo-Azul {
+    text-align: center;
+    font-size: 40px;
+    color: steelblue;
+}
+
 .main > #containerTexto2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.main > #containerTexto2 > h2 {
-    text-align: center;
-    font-size: 40px;
-    color: steelblue;
 }
 
 .main > #containerTexto2 > p {
@@ -301,3 +303,180 @@ html, body {
 /* #endregion Cores Cards */
 
 /* #endregion Cards Coloridos */
+
+/* Flex com cartões */
+/* #region Cartões */
+.main > .containerCartoes {
+  display: flex;
+  margin: 2% 8%;
+}
+
+.main > .containerCartoes > :nth-child(n) {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 8%;
+}
+
+.main > .containerCartoes > :nth-child(n) > p {
+    text-align: center;
+}
+
+/* Botões */
+.main > .containerCartoes > :nth-child(1) > div > button {
+    width: 100%;
+    padding: 10px 5px;
+    margin-top: 20px;
+    color: #7fba00;
+    background-color: white;
+    border-color: #7fba00;
+    border-style: solid;
+}
+
+.main > .containerCartoes > :nth-child(1) > div > button:hover {
+    background-color: #7fba00;
+    color: white;
+}
+
+.main > .containerCartoes > :nth-child(1) > div > button:active {
+    color: #7fba00;
+    background-color: white;
+}
+
+.main > .containerCartoes > :nth-child(2) > div > button {
+    width: 100%;
+    padding: 10px 5px;
+    margin-top: 20px;
+    color: #00a4ef;
+    background-color: white;
+    border-color: #00a4ef;
+    border-style: solid;
+}
+
+.main > .containerCartoes > :nth-child(2) > div > button:hover {
+    background-color: #00a4ef;
+    color: white;
+}
+
+.main > .containerCartoes > :nth-child(2) > div > button:active {
+    color: #00a4ef;
+    background-color: white;
+}
+
+.main > .containerCartoes > :nth-child(3) > div > button {
+    width: 100%;
+    padding: 10px 5px;
+    margin-top: 20px;
+    color: #ffb900;
+    background-color: white;
+    border-color: #ffb900;
+    border-style: solid;
+}
+
+.main > .containerCartoes > :nth-child(3) > div > button:hover {
+    background-color: #ffb900;
+    color: white;
+}
+
+.main > .containerCartoes > :nth-child(3) > div > button:active {
+    color: #ffb900;
+    background-color: white;
+}
+
+/* Icones coloridos */
+
+.main > .containerCartoes > :nth-child(1) > .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7fba00;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.main > .containerCartoes > :nth-child(1) > .icone > img {
+    width: 70%;
+    height: 70%;
+}
+
+.main > .containerCartoes > :nth-child(2) > .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00a4ef;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.main > .containerCartoes > :nth-child(2) > .icone > img {
+    width: 70%;
+    height: 70%;
+}
+
+.main > .containerCartoes > :nth-child(3) > .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb900;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;  
+}
+
+.main > .containerCartoes > :nth-child(3) > .icone > img {
+    width: 70%;
+    height: 70%;
+}
+
+/* #endregion Cartões */
+
+/* Tabela com Bordas */
+/* #region tabela-Bordas */
+.main > .tabela-Bordas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 8%;
+    text-align: center;
+}
+
+.main > .tabela-Bordas > :nth-child(n) {
+    padding: 2rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+/* #endregion tabela-Bordas */
+
+/* Foto High Five */
+
+.main > .high-Five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5% 0;
+    
+}
+
+.main > .high-Five > img {
+    width: 100%;
+}
+
+.main > .high-Five > #vinheta-high-Five {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.main > .high-Five > p {
+    position: absolute;
+    text-align: center;
+    color: white;
+}
