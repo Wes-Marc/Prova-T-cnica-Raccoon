@@ -453,26 +453,21 @@ html, body {
 /* #endregion tabela-Bordas */
 
 /* Foto High Five */
+/* #region High Five */
 
 .main > .high-Five {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin: 5% 0;
-    
+    height: 500px;
+    overflow: hidden;
 }
 
 .main > .high-Five > img {
     width: 100%;
-}
-
-.main > .high-Five > #vinheta-high-Five {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-
+    height: auto;
 }
 
 .main > .high-Five > p {
@@ -480,3 +475,86 @@ html, body {
     text-align: center;
     color: white;
 }
+
+/* #endregion High Five */
+
+/* Texto main antes do formulário */
+
+.main > .main-Texto {
+    text-align: center;
+    color: grey;
+    font-size: 2rem;
+}
+
+/* Formulário */
+/* #region Formulario */
+
+.main > .container-Form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 2%;    
+}
+
+.main > .container-Form > .formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e6;
+    padding: 50px;
+     
+}
+
+input[type= text] {
+    width: 400px;
+    margin: 5px 0px 25px 0px;
+    padding: 15px;  
+    border: none;
+}
+
+input[type= text]:focus {
+    outline-color: #00a4ef;
+}
+
+input[type= submit] {
+    color: white;
+    background-color: #00a4ef;
+    padding: 15px 30px;
+    border: none;
+    font-size: 30px;
+}
+
+input[type= submit]:hover {
+    background-color: #2571b7;
+}
+
+input[type= submit]:active {
+    background-color: #00a4ef;
+}
+
+/* #endregion Formulario */
+
+/* Footer */
+/* #region Footer */
+
+/* Logomarcas do footer */
+
+.footer > .container-Footer-Imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > .container-Footer-Imagens > :nth-child(3) {
+    margin: 0px 0px 0px 50px;
+}
+
+/* Copyright do footer */
+
+.footer > p {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+/* #endregion Footer */
+
