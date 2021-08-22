@@ -114,6 +114,7 @@ nav > ul > li > a:active {
     grid-column-start: 1;
     grid-column-end: 3;
     object-fit: cover;
+    object-position: top;
 }
 
 /* Efeito - deixa imagem de fundo escura */
